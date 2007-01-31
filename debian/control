@@ -1,17 +1,20 @@
 Source: basket
 Section: kde
 Priority: optional
-Maintainer: Jose Luis Tallon <jltallon@adv-solutions.net>
-Build-Depends: debhelper (>= 4.0.0), autotools-dev, kdebase-dev(>= 3.2.2)
-Standards-Version: 3.6.2
+Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pusling.com>
+Build-Depends: debhelper (>= 5), autotools-dev, kdelibs4-dev, kdepim-dev
+Standards-Version: 3.7.2
 
 Package: basket
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: User-friendly way to run programs and manage links in KDE
+Description: a multi-purpose note-taking application for KDE
  This application provides as many baskets (drawers) as you wish; Several
  kinds of objects (texts, URLs, images,...) can be drag-n-drop'd into it. 
  .
  Objects can be edited, copied, dragged... So, they can be arranged
  according to users' taste. Moreover, Basket allows you to keep all objects 
  you want in one place, keep data on hand, take notes...
+ .
+  Homepage: http://basket.kde.org/

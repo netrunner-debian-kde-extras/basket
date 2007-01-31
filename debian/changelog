@@ -1,7 +1,15 @@
 basket (1.0~beta3) experimental; urgency=low
 
-  * New upstream version.
+  * New upstream version. (Closes: #395900) 
+  * Package now maintained by the Debian KDE Extras Team.
   * Remove unnecessary file debian/Makefile.
+  * Update compat to 5.
+  * Bumped Standards-Version to 3.7.2, no changes required.
+  * Update dep on kdebase-dev to kdelibs4-dev.
+  * Add build-dep on kdepim-dev to get kontact integration.
+  * Package description:
+    - Change short description.
+    - Add basket's homepage.
 
  -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Wed, 31 Jan 2007 07:08:36 +0100
 
