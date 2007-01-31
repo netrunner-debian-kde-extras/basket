@@ -1,6 +1,7 @@
 basket (1.0~beta3-1) experimental; urgency=low
 
-  * New upstream version. (Closes: #395900) 
+  [ Ana Beatriz Guerrero Lopez ]
+  * New upstream version. (Closes: #395900)
   * Package now maintained by the Debian KDE Extras Team.
   * Remove unnecessary file debian/Makefile.
   * Update compat to 5.
@@ -19,10 +20,16 @@ basket (1.0~beta3-1) experimental; urgency=low
     - new manpage, old sucked, not only because the wrong section...
     - surely, some more changes in the debian/rules
     - re lib to li za tion!
-    - package licensing.
+    - package licensing - all files under gpl2 or gpl2 or later.  Many authors
     - install desktop in right place.
 
- -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Wed, 31 Jan 2007 07:08:36 +0100
+  [ Sune Vuorela ]
+  * Add quilt to build-dep - we better need a patch system. This also required
+    changes to rules.
+  * Add a 10_dont_spam_stderr patch to not be that verbose on stderr. It uses
+    kdDebug() now to report those.
+
+ -- Sune Vuorela <debian@pusling.com>  Wed, 31 Jan 2007 10:01:11 +0100
 
 basket (0.5.0-6) unstable; urgency=low
 
