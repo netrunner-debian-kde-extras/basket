@@ -4,8 +4,8 @@
  
  void Basket::load()
  {
--	kdDebug() << "basket is loading" << endl ;
-+	fprintf(stderr,"basket is loading\n");
+-	fprintf(stderr,"basket is loading\n");
++	kdDebug() << "basket is loading" << endl ;
  	// Load only once:
  	if (m_loadingLaunched)
  		return;
