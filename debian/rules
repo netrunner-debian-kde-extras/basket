@@ -32,7 +32,7 @@ config.status: $(QUILT_STAMPFN)
 		--with-qt-libraries=/usr/share/qt3/lib \
 		--mandir=\$${prefix}/share/man \
 		--infodir=\$${prefix}/share/info \
-		--disable-rpath  \
+		--disable-rpath --disable-debug \
 		kde_htmldir=/usr/share/doc/kde/HTML
 
 
