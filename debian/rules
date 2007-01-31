@@ -48,7 +48,7 @@ clean:
 
 	-$(MAKE) distclean
 
-	$(RM) config.cache config.sub config.guess config.log
+	$(RM) config.cache config.sub config.guess config.log debian/debiandirs
 
 	dh_clean
 	rm -f build-stamp

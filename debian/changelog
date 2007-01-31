@@ -1,4 +1,4 @@
-basket (1.0~beta3) experimental; urgency=low
+basket (1.0~beta3-1) experimental; urgency=low
 
   * New upstream version. (Closes: #395900) 
   * Package now maintained by the Debian KDE Extras Team.
@@ -13,11 +13,13 @@ basket (1.0~beta3) experimental; urgency=low
     - Add basket's homepage.
   * Not install empty file NEWS.
   * Rewrite debian/rules file.
+  * Improve debian/copyright file.
 
   * TODO:
-    - new manpage, current sucks, not only because the wrong section.
+    - new manpage, old sucked, not only because the wrong section...
     - surely, some more changes in the debian/rules
     - re lib to li za tion!
+    - package licensing.
 
  -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Wed, 31 Jan 2007 07:08:36 +0100
 
