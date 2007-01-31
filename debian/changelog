@@ -1,0 +1,71 @@
+basket (0.5.0-6) unstable; urgency=low
+
+  * Acknowledge NMU. Thanks!
+    Nothing more to be done (at least until upstream releases 0.6)
+
+ -- Jose Luis Tallon <jltallon@adv-solutions.net>  Thu, 11 May 2006  1:08:16 +0200
+
+basket (0.5.0-5.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Added -Wl,--as-needed as ldflags (Closes: #349480)
+  * Trimmed build-depends to not include stuff from
+    kdebase dependency line
+
+ -- Sune Vuorela <debian@pusling.com>  Fri, 21 Apr 2006 21:25:43 +0000
+
+basket (0.5.0-5) unstable; urgency=low
+
+  * Fix crash on cutting multiline item (Closes: #339874)
+
+  * Package sponsored by Roberto Lumbreras <rover@debian.org>
+
+ -- Jose Luis Tallon <jltallon@adv-solutions.net>  Fri, 25 Nov 2005 19:57:15 +0100
+
+basket (0.5.0-4) unstable; urgency=low
+
+  * Fix FTBFS on 64-bit arches (Closes: #300176)
+
+  * Package sponsored by Roberto Lumbreras <rover@debian.org>
+
+ -- Jose Luis Tallon <jltallon@adv-solutions.net>  Tue, 18 Oct 2005 21:53:01 +0200
+
+basket (0.5.0-3) unstable; urgency=low
+
+  * Force rebuild, due to C++ ABI transition (Closes: #327944)
+    - remove dependency on deprecated libjack0.80(Closes: #317184)
+
+  * Fix KDE htmldir; properly install doc (Closes: #322192)
+
+  * Package sponsored by Roberto Lumbreras <rover@debian.org>
+
+ -- Jose Luis Tallon <jltallon@adv-solutions.net>  Wed, 14 Sep 2005 02:35:13 +0200
+
+basket (0.5.0-2) unstable; urgency=low
+
+  * Force relink -- dependency to removed lib (Closes: #317184)
+
+  * Localization: updated DE translation (Closes: #313671)
+
+  * Package sponsored by Roberto Lumbreras <rover@debian.org>
+
+ -- Jose Luis Tallon <jltallon@adv-solutions.net>  Sat, 12 Mar 2005 20:30:13 +0100
+
+basket (0.5.0-1) unstable; urgency=low
+
+  * New upstream release. Major rewrite, tons of new features.
+
+  * Fix menu file (Closes: #283375)
+
+  * Package sponsored by Roberto Lumbreras <rover@debian.org>
+
+ -- Jose Luis Tallon <jltallon@adv-solutions.net>  Sat, 12 Mar 2005 20:30:13 +0100
+
+basket (0.4.0d-1) unstable; urgency=low
+
+  * Initial Packaging. Fullfill ITP (Closes: #259180)
+
+  * Package sponsored by Roberto Lumbreras <rover@debian.org>
+
+ -- Jose Luis Tallon <jltallon@adv-solutions.net>  Sat, 23 Oct 2004 02:21:16 +0200
+
