@@ -1,5 +1,14 @@
 --- basket/src/basket.cpp	2007-01-31 09:53:47.000000000 +0100
 +++ basket/src/basket.cpp	2007-01-31 09:54:40.000000000 +0100
+@@ -1106,7 +1106,7 @@ bool Basket::save()
+ 
+ void Basket::load()
+ {
+-	kdDebug() << "basket is loading" << endl ;
++	fprintf(stderr,"basket is loading\n");
+ 	// Load only once:
+ 	if (m_loadingLaunched)
+ 		return;
 @@ -3781,13 +3781,13 @@ void Basket::closeEditorDelayed()
  
  bool Basket::closeEditor()
