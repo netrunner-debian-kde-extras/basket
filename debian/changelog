@@ -7,9 +7,11 @@ basket (1.0~beta3) experimental; urgency=low
   * Bumped Standards-Version to 3.7.2, no changes required.
   * Update dep on kdebase-dev to kdelibs4-dev.
   * Add build-dep on kdepim-dev to get kontact integration.
+  * Add build-dep on libgpgme11-dev to support encryption.
   * Package description:
     - Change short description.
     - Add basket's homepage.
+  * Not install empty file NEWS.
 
  -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Wed, 31 Jan 2007 07:08:36 +0100
 
