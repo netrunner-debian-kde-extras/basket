@@ -15,25 +15,26 @@ ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
 else
 	CFLAGS += -O2
 endif
-ifeq (,$(findstring nostrip,$(DEB_BUILD_OPTIONS)))
-	INSTALL_PROGRAM += -s
-endif
 
 include /usr/share/quilt/quilt.make
 
--include debian/debiandirs
 
-debian/debiandirs: admin/debianrules
-	perl -w admin/debianrules echodirs > debian/debiandirs
-
-config.status: configure patch
+config.status: $(QUILT_STAMPFN)
 	dh_testdir
 	test -e config.sub -a -L config.sub || \
 		ln -sf /usr/share/misc/config.sub config.sub
 	test -e config.guess -a -L config.guess || \
 		ln -sf /usr/share/misc/config.guess config.guess
 
-	./configure $(configkde)
+	CFLAGS="$(CFLAGS)"  ./configure --host=$(DEB_HOST_GNU_TYPE) --build=$(DEB_BUILD_GNU_TYPE) \
+		--prefix=/usr --with-qt-dir=/usr/share/qt3 \
+		--with-qt-includes=/usr/include/qt3 \
+		--with-qt-libraries=/usr/share/qt3/lib \
+		--mandir=\$${prefix}/share/man \
+		--infodir=\$${prefix}/share/info \
+		--disable-rpath  \
+		kde_htmldir=/usr/share/doc/kde/HTML
+
 
 build: build-stamp
 
@@ -50,7 +51,7 @@ clean: unpatch
 
 	-$(MAKE) distclean
 
-	$(RM) config.cache config.sub config.guess config.log debian/debiandirs
+	$(RM) config.cache config.sub config.guess config.log
 
 	dh_clean
 	rm -f build-stamp
