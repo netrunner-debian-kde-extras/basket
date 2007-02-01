@@ -78,7 +78,7 @@ binary-arch: build install
 	dh_installmenu
 #	dh_installlogrotate
 #	dh_installinfo
-	#dh_installman debian/basket.1
+	dh_installman debian/basket.1
 	dh_link
 	dh_strip
 	dh_compress
