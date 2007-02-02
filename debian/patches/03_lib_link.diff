@@ -1,0 +1,11 @@
+--- basket-1.0~beta3/file-integration/Makefile.am	2007-02-02 13:13:55.000000000 +0100
++++ basket-1.0~beta3/file-integration/Makefile.am	2007-02-02 13:17:49.000000000 +0100
+@@ -11,7 +11,7 @@ INCLUDES = $(all_includes)
+ kde_module_LTLIBRARIES = basketthumbcreator.la
+ basketthumbcreator_la_SOURCES = basketthumbcreator.cpp
+ basketthumbcreator_la_LIBADD = $(LIB_KIO)
+-basketthumbcreator_la_LDFLAGS = $(all_libraries) -module $(KDE_PLUGIN)
++basketthumbcreator_la_LDFLAGS = $(all_libraries) -module $(KDE_PLUGIN) $(LIB_QT) $(LIB_KDECORE)
+ kde_services_DATA = basketthumbcreator.desktop
+ 
+ # Icons:
