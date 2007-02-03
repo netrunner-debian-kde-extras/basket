@@ -27,7 +27,7 @@ basket (1.0~beta3-1) experimental; urgency=low
     kdDebug() now to report those.
   * Add a 11_match_kde3.5.6_kontact patch to make the kontact plugin work with 
     kontact 3.5.6 - kdepim people have bumped their internal versionings.
-  * Write new and improved manpage (Derived from help2man).
+  * Write new and improved manpage (Derived from help2man). (Closes: #405569)
   * Improve copyright file.
   * Minor changes to rules file.
   * Relibtoolization - and a need to fix parts of the build system.
