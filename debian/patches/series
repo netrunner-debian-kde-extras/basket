@@ -2,4 +2,5 @@
 03_lib_link.diff
 10_dont_spam_stderr.diff
 11_match_kde3.5.6_kontact.diff
+12_desktop.diff
 98_buildprep.diff

@@ -1,8 +1,9 @@
 basket (1.0~beta3-1) experimental; urgency=low
 
-  [ Ana Beatriz Guerrero Lopez ]
   * New upstream version. (Closes: #395900)
   * Package now maintained by the Debian KDE Extras Team.
+  
+  [ Ana Beatriz Guerrero Lopez ]
   * Remove unnecessary file debian/Makefile.
   * Update compat to 5.
   * Bumped Standards-Version to 3.7.2, no changes required.
@@ -15,13 +16,9 @@ basket (1.0~beta3-1) experimental; urgency=low
   * Not install empty file NEWS.
   * Rewrite debian/rules file.
   * Improve debian/copyright file.
-
-  * TODO:
-    - surely, some more changes in the debian/rules
-    - install desktop in right place.
-    - ana needs to nitpick Sunes Changelog entries
-    - Correct maintainer field of this changelog
-
+  * Versioned build-deps in kdelibs4-dev and kdepim-dev to build against 3.5.6
+    (so Sune's changes will work).
+  * Patched desktop file to include Categories and moved to right place.
 
   [ Sune Vuorela ]
   * Add quilt to build-dep - we better need a patch system. This also required
@@ -37,7 +34,7 @@ basket (1.0~beta3-1) experimental; urgency=low
     (New libtool put in thru patch 02, patch 03 fixes build system relying on 
     broken libtool and the big buildprep as patch 98.
 
- -- Sune Vuorela <debian@pusling.com>  Wed, 31 Jan 2007 10:01:11 +0100
+ -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sat, 03 Feb 2007 07:41:48 +0100
 
 basket (0.5.0-6) unstable; urgency=low
 
