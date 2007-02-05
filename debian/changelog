@@ -1,4 +1,4 @@
-basket (1.0~rc1-1) experimental; urgency=low
+basket (1.0~rc2-1) experimental; urgency=low
 
   * New upstream release:
     - Removed 10_dont_spam_stderr and 11_match_kde3.5.6_kontact,
