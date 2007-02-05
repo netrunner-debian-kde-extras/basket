@@ -1,3 +1,4 @@
 02_libtool_update.diff
 03_lib_link.diff
 12_desktop.diff
+98_buildprep.diff

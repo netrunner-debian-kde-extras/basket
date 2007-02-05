@@ -1,10 +1,11 @@
 basket (1.0~rc1-1) experimental; urgency=low
 
   * New upstream release:
-    - Removed 10_dont_spam_stderr and 11_match_kde3.5.6_kontact, 
-      solved upstream.
+    - Removed 10_dont_spam_stderr and 11_match_kde3.5.6_kontact,
+      merged upstream.
+    - Fixed offset patch 12_desktop.diff.
 
- -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sun,  4 Feb 2007 23:34:23 +0100
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Mon,  5 Feb 2007 05:05:50 +0100
 
 basket (1.0~beta3-1) experimental; urgency=low
 
