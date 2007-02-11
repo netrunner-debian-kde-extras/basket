@@ -1,10 +1,10 @@
 basket (1.0-1) experimental; urgency=low
 
-  * New upstream version
+  * New upstream version.
     - final 1.0 version.
-  * The ana-please-pass-your-exam-this-is-your-miracle release
+  * The ana-please-pass-your-exam-this-is-your-miracle release.
 
- -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sun, 11 Feb 2007 12:35:24 +0100
+ -- Sune Vuorela <debian@pusling.com>  Sun, 11 Feb 2007 12:35:24 +0100
 
 basket (1.0~rc2-1) experimental; urgency=low
 
