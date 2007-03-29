@@ -1,3 +1,10 @@
+basket (1.0.1-1) experimental; urgency=low
+
+  * New upstream release. 
+  * Fix offset patch 12_desktop.diff
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Thu, 29 Mar 2007 13:32:00 +0000
+
 basket (1.0-1) experimental; urgency=low
 
   * New upstream version.
