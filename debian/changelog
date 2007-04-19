@@ -1,3 +1,10 @@
+basket (1.0.2-1) UNRELEASED; urgency=low
+
+  * Add da.po as debian/patches/13_add_da.po.diff. Thanks to Martin Schlander.
+    TODO: Redo buildprep
+
+ -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Thu, 19 Apr 2007 09:41:46 +0200
+
 basket (1.0.1-1) experimental; urgency=low
 
   * New upstream release. 
