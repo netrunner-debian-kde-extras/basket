@@ -1,9 +1,13 @@
-basket (1.0.2-1) UNRELEASED; urgency=low
+basket (1.0.2-1) unstable; urgency=low
 
+  [ Sune Vuorela ]
   * Add da.po as debian/patches/13_add_da.po.diff. Thanks to Martin Schlander.
-    TODO: Redo buildprep
 
- -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Thu, 19 Apr 2007 09:41:46 +0200
+  [ Ana Beatriz Guerrero Lopez ]
+  * Add 14_update_es_po.diff updating spanish translation. Thanks to Enrique Matías.
+  * Buildprep.
+
+ -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Tue, 24 Apr 2007 16:37:48 +0100
 
 basket (1.0.1-1) experimental; urgency=low
 

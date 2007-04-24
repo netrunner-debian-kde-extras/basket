@@ -2,4 +2,6 @@
 03_lib_link.diff
 04_am_maintainer_mode.diff
 12_desktop.diff
+13_add_da.po.diff
+14_update_es_po.diff
 98_buildprep.diff
