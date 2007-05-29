@@ -1,3 +1,11 @@
+basket (1.0.2-2) unstable; urgency=low
+
+  [ Ana Beatriz Guerrero Lopez ]
+  * Apply patch to fix FTBFS with GCC 4.3. Thanks to Martin Michlmayr.
+    (Closes: #421209)
+
+ -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Tue, 29 May 2007 12:47:58 +0100
+
 basket (1.0.2-1) unstable; urgency=low
 
   [ Sune Vuorela ]

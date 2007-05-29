@@ -4,4 +4,5 @@
 12_desktop.diff
 13_add_da.po.diff
 14_update_es_po.diff
+15_fix_gcc4.3.diff
 98_buildprep.diff
