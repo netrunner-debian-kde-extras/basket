@@ -3,12 +3,12 @@ Section: kde
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pusling.com>
-Build-Depends: debhelper (>= 5), autotools-dev, kdelibs4-dev (>= 4:3.5.6), kdepim-dev (>= 4:3.5.6), libgpgme11-dev, quilt (>= 0.40)
+Build-Depends: debhelper (>= 5), autotools-dev, kdelibs4-dev (>= 4:3.5.6), kdepim-dev (>= 4:3.5.6), libgpgme11-dev, quilt (>= 0.40), autoconf, libtool, automake1.9
 Standards-Version: 3.7.2
 
 Package: basket
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${kontact:Depends}
 Description: a multi-purpose note-taking application for KDE
  This application provides as many baskets (drawers) as you wish; Several
  kinds of objects (texts, URLs, images,...) can be drag-n-drop'd into it. 

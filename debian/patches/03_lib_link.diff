@@ -1,11 +1,40 @@
---- basket-1.0~beta3/file-integration/Makefile.am	2007-02-02 13:13:55.000000000 +0100
-+++ basket-1.0~beta3/file-integration/Makefile.am	2007-02-02 13:17:49.000000000 +0100
-@@ -11,7 +11,7 @@ INCLUDES = $(all_includes)
+Index: b/file-integration/Makefile.am
+===================================================================
+--- a/file-integration/Makefile.am
++++ b/file-integration/Makefile.am
+@@ -10,8 +10,8 @@
+ INCLUDES = $(all_includes)
  kde_module_LTLIBRARIES = basketthumbcreator.la
  basketthumbcreator_la_SOURCES = basketthumbcreator.cpp
- basketthumbcreator_la_LIBADD = $(LIB_KIO)
+-basketthumbcreator_la_LIBADD = $(LIB_KIO)
 -basketthumbcreator_la_LDFLAGS = $(all_libraries) -module $(KDE_PLUGIN)
-+basketthumbcreator_la_LDFLAGS = $(all_libraries) -module $(KDE_PLUGIN) $(LIB_QT) $(LIB_KDECORE)
++basketthumbcreator_la_LIBADD =
++basketthumbcreator_la_LDFLAGS = $(all_libraries) -module $(KDE_PLUGIN) -lqt-mt $(LIB_KDECORE)
  kde_services_DATA = basketthumbcreator.desktop
  
  # Icons:
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -32,7 +32,7 @@
+ libbasketcommon_la_LDFLAGS = -avoid-version -no-undefined $(all_libraries)
+ 
+ libbasketcommon_la_LIBADD = $(LIB_ARTSKDE) -lkio $(LIB_KDEUI) $(LIB_KDECORE) \
+-	$(LIB_QT) $(LIBSOCKET) $(GPGME_LIBS) $(LIB_KPARTS) -lDCOP -lkdefx -lkdeui
++	-lqt-mt -lX11 $(LIBSOCKET) -lgpgme $(LIB_KPARTS) -lkdefx -lkdeui -lDCOP
+ 
+ libbasketcommon_la_SOURCES = \
+ 	archive.cpp bnpview.cpp settings.cpp basket.cpp basketproperties.cpp \
+@@ -82,11 +82,11 @@
+ 
+ libbasketpart_la_SOURCES = basket_part.cpp
+ libbasketpart_la_LDFLAGS = $(all_libraries) $(KDE_RPATH) -module -avoid-version -no-undefined
+-libbasketpart_la_LIBADD  = libbasketcommon.la -lkparts -lkdeui $(LIB_KDECORE) $(LIB_QT) -lDCOP
++libbasketpart_la_LIBADD  = libbasketcommon.la -lkparts -lkdeui $(LIB_KDECORE) -lqt-mt
+ 
+ kcm_basket_la_SOURCES = kcm_basket.cpp
+ kcm_basket_la_LDFLAGS = $(all_libraries) -module -avoid-version -no-undefined
+-kcm_basket_la_LIBADD = libbasketcommon.la $(LIB_KDECORE) $(LIB_QT) -lkdeui
++kcm_basket_la_LIBADD = libbasketcommon.la -lqt-mt -lkdeui
+ 
+ # this is where the desktop file will go
+ partdesktopdir   = $(kde_servicesdir)

@@ -18,8 +18,15 @@ endif
 
 include /usr/share/quilt/quilt.make
 
+configure: $(QUILT_STAMPFN)
+	cp -f /usr/share/libtool/ltmain.sh admin/ltmain.sh
+	cp -f /usr/share/libtool/libtool.m4 admin/libtool.m4.in
 
-config.status: $(QUILT_STAMPFN)
+	make -f admin/Makefile.common
+
+
+
+config.status: configure
 	dh_testdir
 	test -e config.sub -a -L config.sub || \
 		ln -sf /usr/share/misc/config.sub config.sub
@@ -49,12 +56,23 @@ clean: unpatch
 	dh_testdir
 	dh_testroot
 
-	-$(MAKE) distclean
+	[ ! -f Makefile ] || $(MAKE) distclean
 
 	$(RM) config.cache config.sub config.guess config.log
 
 	dh_clean
 	rm -f build-stamp
+	#cleaning up after relibtoolizing
+	find . -name Makefile.in | xargs rm -f
+	rm -f po/*.gmo
+	rm -f config.sub config.guess
+	rm -f aclocal.m4
+	rm -f acinclude.m4
+	rm -f configure configure.in
+	rm -f config.h.in
+	rm -f admin/ltmain.sh
+	rm -f admin/libtool.m4.in
+
 
 install: build
 	dh_testdir
@@ -64,12 +82,15 @@ install: build
 
 	# Install into package-build-dir
 	$(MAKE) install DESTDIR=$(CURDIR)/debian/basket
+	#incompatible compatible file
+	rm $(CURDIR)/debian/basket/usr/share/services/kontact/basket_v4.desktop
 
 	mkdir -p $(CURDIR)/debian/basket/usr/share/applications/kde/
 	mv $(CURDIR)/debian/basket/usr/share/applnk/Utilities/basket.desktop $(CURDIR)/debian/basket/usr/share/applications/kde/
 
 binary-indep: build install
 
+KONTACT_PLUGIN_ABI=$(shell echo $(shell grep X-KDE-KontactPluginVersion kontact_plugin/basket.desktop|sed 's/X-KDE-KontactPluginVersion//;s/=//'))
 binary-arch: build install
 	dh_testdir
 	dh_testroot
@@ -87,6 +108,7 @@ binary-arch: build install
 	dh_fixperms
 	dh_installdeb
 	dh_shlibdeps
+	echo kontact:Depends=kontact-plugin-abi-$(KONTACT_PLUGIN_ABI) >> debian/basket.substvars
 	dh_gencontrol
 	dh_md5sums
 	dh_builddeb
