@@ -2,9 +2,10 @@ basket (1.0.2-3) unstable; urgency=low
 
   +++ Changes by Sune Vuorela:
 
-  * Relibtoolize on build. much easier. This also fixes double build(Closes: #442503)
-  * Fix kontact integration (Closes: #469596)
-  * Remove watch file (Closes: #449699)
+  * Relibtoolize on build, much easier. This also fixes FTBFS if build twice
+    in a row. (Closes: #442503)
+  * Fix kontact integration. (Closes: #469596)
+  * Remove broken watch file. (Closes: #449699)
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Tue, 11 Mar 2008 23:39:35 +0100
 
