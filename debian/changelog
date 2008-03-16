@@ -6,6 +6,7 @@ basket (1.0.2-3) unstable; urgency=low
     in a row. (Closes: #442503)
   * Fix kontact integration. (Closes: #469596)
   * Remove broken watch file. (Closes: #449699)
+  * Build against kontact that is fixed concerning third party plugins
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Tue, 11 Mar 2008 23:39:35 +0100
 

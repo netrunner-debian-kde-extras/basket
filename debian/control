@@ -3,7 +3,7 @@ Section: kde
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pusling.com>
-Build-Depends: debhelper (>= 5), autotools-dev, kdelibs4-dev (>= 4:3.5.6), kdepim-dev (>= 4:3.5.6), libgpgme11-dev, quilt (>= 0.40), autoconf, libtool, automake1.9
+Build-Depends: debhelper (>= 5), autotools-dev, kdelibs4-dev (>= 4:3.5.6), kdepim-dev (>= 4:3.5.9-2), libgpgme11-dev, quilt (>= 0.40), autoconf, libtool, automake1.9
 Standards-Version: 3.7.2
 
 Package: basket
