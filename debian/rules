@@ -81,12 +81,12 @@ install: build
 	dh_installdirs
 
 	# Install into package-build-dir
-	$(MAKE) install DESTDIR=$(CURDIR)/debian/basket
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
 	#incompatible compatible file
-	rm $(CURDIR)/debian/basket/usr/share/services/kontact/basket_v4.desktop
+	rm $(CURDIR)/debian/tmp/usr/share/services/kontact/basket_v4.desktop
 
-	mkdir -p $(CURDIR)/debian/basket/usr/share/applications/kde/
-	mv $(CURDIR)/debian/basket/usr/share/applnk/Utilities/basket.desktop $(CURDIR)/debian/basket/usr/share/applications/kde/
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/applications/kde/
+	mv $(CURDIR)/debian/tmp/usr/share/applnk/Utilities/basket.desktop $(CURDIR)/debian/tmp/usr/share/applications/kde/
 
 binary-indep: build install
 
@@ -97,7 +97,7 @@ binary-arch: build install
 	dh_installchangelogs ChangeLog
 	dh_installdocs
 	dh_installexamples
-	dh_install
+	dh_install --sourcedir=debian/tmp
 	dh_installmenu
 #	dh_installlogrotate
 #	dh_installinfo
@@ -108,7 +108,7 @@ binary-arch: build install
 	dh_fixperms
 	dh_installdeb
 	dh_shlibdeps
-	echo kontact:Depends=kontact-plugin-abi-$(KONTACT_PLUGIN_ABI) >> debian/basket.substvars
+	echo kontact:Depends=kontact-plugin-abi-$(KONTACT_PLUGIN_ABI) >> debian/basket-kontact-integration.substvars
 	dh_gencontrol
 	dh_md5sums
 	dh_builddeb

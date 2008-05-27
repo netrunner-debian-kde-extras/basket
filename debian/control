@@ -4,11 +4,12 @@ Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pusling.com>
 Build-Depends: debhelper (>= 5), autotools-dev, kdelibs4-dev (>= 4:3.5.6), kdepim-dev (>= 4:3.5.9-2), libgpgme11-dev, quilt (>= 0.40), autoconf, libtool, automake1.9
+Homepage: http://basket.kde.org/
 Standards-Version: 3.7.2
 
 Package: basket
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${kontact:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: a multi-purpose note-taking application for KDE
  This application provides as many baskets (drawers) as you wish; Several
  kinds of objects (texts, URLs, images,...) can be drag-n-drop'd into it. 
@@ -18,3 +19,17 @@ Description: a multi-purpose note-taking application for KDE
  you want in one place, keep data on hand, take notes...
  .
   Homepage: http://basket.kde.org/
+
+Package: basket-kontact-integration
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${kontact:Depends}
+Description: a multi-purpose note-taking appliction, Kontact integration
+ This application provides as many baskets (drawers) as you wish; Several
+ kinds of objects (texts, URLs, images,...) can be drag-n-drop'd into it. 
+ .
+ Objects can be edited, copied, dragged... So, they can be arranged
+ according to users' taste. Moreover, Basket allows you to keep all objects 
+ you want in one place, keep data on hand, take notes...
+ .
+ This package contains the kontact-kde3 plugin
+ .
