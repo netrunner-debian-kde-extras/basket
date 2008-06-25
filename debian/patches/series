@@ -1,5 +1,6 @@
 03_lib_link.diff
 04_am_maintainer_mode.diff
+05_allow_newer_automake_and_autoconf.diff
 12_desktop.diff
 13_add_da.po.diff
 14_update_es_po.diff
