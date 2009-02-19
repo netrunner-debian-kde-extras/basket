@@ -82,15 +82,12 @@ install: build
 
 	# Install into package-build-dir
 	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
-	#incompatible compatible file
-	rm $(CURDIR)/debian/tmp/usr/share/services/kontact/basket_v4.desktop
 
 	mkdir -p $(CURDIR)/debian/tmp/usr/share/applications/kde/
 	mv $(CURDIR)/debian/tmp/usr/share/applnk/Utilities/basket.desktop $(CURDIR)/debian/tmp/usr/share/applications/kde/
 
 binary-indep: build install
 
-KONTACT_PLUGIN_ABI=$(shell echo $(shell grep X-KDE-KontactPluginVersion kontact_plugin/basket.desktop|sed 's/X-KDE-KontactPluginVersion//;s/=//'))
 binary-arch: build install
 	dh_testdir
 	dh_testroot
@@ -108,7 +105,6 @@ binary-arch: build install
 	dh_fixperms
 	dh_installdeb
 	dh_shlibdeps
-	echo kontact:Depends=kontact-plugin-abi-$(KONTACT_PLUGIN_ABI) >> debian/basket-kontact-integration.substvars
 	dh_gencontrol
 	dh_md5sums
 	dh_builddeb

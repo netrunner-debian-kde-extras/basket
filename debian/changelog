@@ -1,3 +1,9 @@
+basket (1.0.2-6) unstable; urgency=low
+
+  * Yay for Lenny. Remove kontact plugin.
+
+ -- Sune Vuorela <debian@pusling.com>  Sun, 15 Feb 2009 12:15:01 +0100
+
 basket (1.0.2-5) unstable; urgency=low
 
   * Also allow automake 1.10 usage - and just build-dep on automake i
