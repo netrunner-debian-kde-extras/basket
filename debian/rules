@@ -19,8 +19,8 @@ endif
 include /usr/share/quilt/quilt.make
 
 configure: $(QUILT_STAMPFN)
-	cp -f /usr/share/libtool/ltmain.sh admin/ltmain.sh
-	cp -f /usr/share/libtool/libtool.m4 admin/libtool.m4.in
+	cp -f /usr/share/libtool/config/ltmain.sh admin/ltmain.sh
+	cat /usr/share/aclocal/*.m4 > admin/libtool.m4.in
 
 	make -f admin/Makefile.common
 

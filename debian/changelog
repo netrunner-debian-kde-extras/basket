@@ -1,3 +1,10 @@
+basket (1.0.2-7) unstable; urgency=low
+
+  * Hack around teh libtool changes. Now builds. But kind of a hack.
+    (Closes: #527814)
+
+ -- Sune Vuorela <debian@pusling.com>  Sat, 09 May 2009 12:12:02 +0200
+
 basket (1.0.2-6) unstable; urgency=low
 
   * Yay for Lenny. Remove kontact plugin.
