@@ -1,8 +1,10 @@
 03_lib_link.diff
 04_am_maintainer_mode.diff
 05_allow_newer_automake_and_autoconf.diff
+06_autoconf2.64.diff
 12_desktop.diff
 13_add_da.po.diff
 14_update_es_po.diff
 15_fix_gcc4.3.diff
 16_basket_kontact_compat.diff
+17_mimetype.diff

@@ -1,3 +1,13 @@
+basket (1.0.2-8) unstable; urgency=low
+
+  * Hack around autoconf2.64 changes. More hacks. Thanks to pld-linux.
+  * Allow automake 1.11 usage. and 1.12. and 1.13. and...
+    (Closes: #543095)
+  * Adapt to new menu structure. (Closes: 496058)
+  * Add ; to desktop file. (Closes: 507803)
+
+ -- Sune Vuorela <debian@pusling.com>  Tue, 01 Sep 2009 21:25:53 +0200
+
 basket (1.0.2-7) unstable; urgency=low
 
   * Hack around teh libtool changes. Now builds. But kind of a hack.
