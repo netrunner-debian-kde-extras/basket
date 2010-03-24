@@ -1,3 +1,11 @@
+basket (1.80-1) UNRELEASED; urgency=low
+
+  -> targeted experimental.
+
+  * New upstream release.
+
+ -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Wed, 24 Mar 2010 19:26:39 +0100
+
 basket (1.0.2-8) unstable; urgency=low
 
   * Hack around autoconf2.64 changes. More hacks. Thanks to pld-linux.
