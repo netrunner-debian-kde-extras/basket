@@ -4,7 +4,23 @@ basket (1.80-1) UNRELEASED; urgency=low
 
   * New upstream release.
 
- -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Wed, 24 Mar 2010 19:26:39 +0100
+  [ Luigi Toscano ]
+  * Cleanup the build system, switch to debhelper 7 and "3.0 (quilt)" format.
+  * Remove patches: 
+    - 03_lib_link, 04_am_maintainer_mode, 
+      05_allow_newer_automake_and_autoconf, 06_autoconf2.64: 
+      no more needed (new build system);
+    - 12_desktop, 13_add_da.po, 16_basket_kontact_compat,
+      17_mimetype: merged upstream;
+    - 15_fix_gcc4.3: no more needed.
+  * Refresh patch: 14_update_es_po.
+  * Add patch: 18_no_kde3_libs (only Q3Support is needed, not kde3support)
+  * Update copyright, bump Standards-Version to 3.8.4
+  * Rename README.Debian as README.source.
+  * Add lintian-overrides file.
+  * Add myself to Uploaders.
+
+ -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Mon, 12 Apr 2010 01:37:00 +0200
 
 basket (1.0.2-8) unstable; urgency=low
 

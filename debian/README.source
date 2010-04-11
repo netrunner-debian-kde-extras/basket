@@ -134,12 +134,6 @@ for the current dists are: sid, etch, sarge, edgy and dapper. For an example
 see asterisk-addons/trunk/debian/backports/sarge which may be more illustrating
 what to do.
 
-8. Autotools, libtool, am_maintainer, buildprep and configure updates
----------------------------------------------------------------------
-
-Achim, Please add some text in here to document when it is necessary and
-how we update the build enviroment for a package.
-
 -(snip)-
 
 In case any of the above is unclear to you or seems outdated, please drop us a

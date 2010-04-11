@@ -1,0 +1,3 @@
+basket: non-dev-pkg-with-shlib-symlink
+basket: shlib-without-versioned-soname usr/lib/libbasketcommon.so libbasketcommon.so
+basket: package-name-doesnt-match-sonames libbasketcommon4
