@@ -3,7 +3,7 @@ Section: kde
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Sune Vuorela <debian@pusling.com>, Luigi Toscano <luigi.toscano@tiscali.it>
-Build-Depends: debhelper (>= 7), pkg-kde-tools (>= 0.5), cmake, kdepimlibs5-dev (>=4:4.3.3)
+Build-Depends: debhelper (>= 7.3.16), pkg-kde-tools (>= 0.5), cmake, kdepimlibs5-dev (>=4:4.3.3)
 Homepage: http://basket.kde.org/
 Standards-Version: 3.8.4
 
