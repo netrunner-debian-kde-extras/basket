@@ -1,3 +1,7 @@
+Description: Do not link to KDE3Support, only Qt3Support is needed
+Author: Luigi Toscano <luigi.toscano@tiscali.it>
+Forwarded: no
+Last-Update: 2010-04-12 
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
 @@ -59,7 +59,7 @@
