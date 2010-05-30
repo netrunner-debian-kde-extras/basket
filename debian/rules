@@ -9,6 +9,6 @@ TMP     = $(CURDIR)/debian/$(PACKAGE)
 
 override_dh_auto_install:
 	dh_auto_install
-	find $(TMP)/usr/lib -name 'libbasket*' -type l -exec rm {} \;
+	rm -f $(TMP)/usr/lib/libbasketcommon.so
 
 .PHONY: override_dh_auto_test
