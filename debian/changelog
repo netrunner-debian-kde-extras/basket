@@ -1,6 +1,4 @@
-basket (1.80-1) UNRELEASED; urgency=low
-
-  -> targeted experimental.
+basket (1.80-1) unstable; urgency=low
 
   * New upstream release.
 
@@ -20,7 +18,7 @@ basket (1.80-1) UNRELEASED; urgency=low
   * Add lintian-overrides file.
   * Add myself to Uploaders.
 
- -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Mon, 12 Apr 2010 01:37:00 +0200
+ -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sun, 30 May 2010 20:55:54 +0200
 
 basket (1.0.2-8) unstable; urgency=low
 
