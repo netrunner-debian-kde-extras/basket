@@ -1,3 +1,10 @@
+basket (1.81-1) unstable; urgency=low
+
+  [ Luigi Toscano ]
+  * New upstream release.
+
+ -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Fri, 08 Oct 2010 13:30:09 +0200
+
 basket (1.80-1) unstable; urgency=low
 
   * New upstream release.
