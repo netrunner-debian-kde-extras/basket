@@ -1,4 +1,16 @@
-basket (1.81-1) unstable; urgency=low
+basket (1.81-2) UNRELEASED; urgency=high
+
+  [ Luigi Toscano ]
+  * Update standard version to 3.9.3.
+  * Add support for parallel build.
+  * Fix lintian warnings (description-synopsis-starts-with-article,
+    manpage-has-bad-whatis-entry).
+  * Fix "experimental" instead of "unstable" in the previous changelog entry.
+  * Urgency set to high to fix a RC bug (closes: #587544).
+
+ -- Luigi Toscano <luigi.toscano@tiscali.it>  Thu, 29 Mar 2012 23:02:10 +0200
+
+basket (1.81-1) experimental; urgency=low
 
   [ Luigi Toscano ]
   * New upstream release.
