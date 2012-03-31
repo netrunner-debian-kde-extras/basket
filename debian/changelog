@@ -3,12 +3,13 @@ basket (1.81-2) UNRELEASED; urgency=high
   [ Luigi Toscano ]
   * Update standard version to 3.9.3. No changes needed.
   * Add support for parallel build.
+  * Add watch file.
   * Fix lintian warnings (description-synopsis-starts-with-article,
     manpage-has-bad-whatis-entry).
   * Fix "experimental" instead of "unstable" in the previous changelog entry.
   * Urgency set to high to fix a RC bug (closes: #587544).
 
- -- Luigi Toscano <luigi.toscano@tiscali.it>  Thu, 29 Mar 2012 23:02:10 +0200
+ -- Luigi Toscano <luigi.toscano@tiscali.it>  Thu, 31 Mar 2012 16:30:55 +0200
 
 basket (1.81-1) experimental; urgency=low
 
