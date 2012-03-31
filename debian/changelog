@@ -1,4 +1,4 @@
-basket (1.81-2) UNRELEASED; urgency=high
+basket (1.81-2) unstable; urgency=high
 
   [ Luigi Toscano ]
   * Update standard version to 3.9.3. No changes required.
@@ -9,8 +9,9 @@ basket (1.81-2) UNRELEASED; urgency=high
   * Add DEP-3 headers to 14_update_es_po.
   * Fix "experimental" instead of "unstable" in the previous changelog entry.
   * Urgency set to high to fix a RC bug (closes: #587544).
+  * Upload to unstable.
 
- -- Luigi Toscano <luigi.toscano@tiscali.it>  Thu, 31 Mar 2012 16:30:55 +0200
+ -- Luigi Toscano <luigi.toscano@tiscali.it>  Thu, 31 Mar 2012 17:44:05 +0200
 
 basket (1.81-1) experimental; urgency=low
 
