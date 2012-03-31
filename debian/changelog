@@ -6,6 +6,7 @@ basket (1.81-2) UNRELEASED; urgency=high
   * Add watch file.
   * Fix lintian warnings (description-synopsis-starts-with-article,
     manpage-has-bad-whatis-entry).
+  * Add DEP-3 headers to 14_update_es_po.
   * Fix "experimental" instead of "unstable" in the previous changelog entry.
   * Urgency set to high to fix a RC bug (closes: #587544).
 
