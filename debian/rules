@@ -1,14 +1,7 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
-PACKAGE = $(shell dh_listpackages)
-TMP     = $(CURDIR)/debian/$(PACKAGE)
-
 %:
 	dh $@ --parallel --with kde
-
-override_dh_auto_install:
-	dh_auto_install
-	rm -f $(TMP)/usr/lib/libbasketcommon.so
 
 .PHONY: override_dh_auto_test
