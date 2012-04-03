@@ -6,11 +6,12 @@ basket (1.81-3) UNRELEASED; urgency=low
     - as a consequence, simplify rules by removing override_dh_auto_install
       and the variables used by that section; it was needed to remove one
       symbolic link which is not included in the *.install files anymore.
+  * Add override no-symbols-control-file (libbasketcommon is private).
   * Change order of parameters of dch command in rules file to be
-    compatible with debhelper>7. 
+    compatible with debhelper>7.
   * Fix day of the week in previous changelog entry.
 
- -- Luigi Toscano <luigi.toscano@tiscali.it>  Wed, 04 Apr 2012 01:22:16 +0200
+ -- Luigi Toscano <luigi.toscano@tiscali.it>  Wed, 04 Apr 2012 01:30:28 +0200
 
 basket (1.81-2) unstable; urgency=high
 
