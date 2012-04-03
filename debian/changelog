@@ -2,6 +2,7 @@ basket (1.81-3) UNRELEASED; urgency=low
 
   * Change order of parameters of dch command in rules file to be
     compatible with debhelper>7. 
+  * Fix day of the week in previous changelog entry.
 
  -- Luigi Toscano <luigi.toscano@tiscali.it>  Wed, 04 Apr 2012 01:17:52 +0200
 
@@ -18,7 +19,7 @@ basket (1.81-2) unstable; urgency=high
   * Urgency set to high to fix a RC bug (closes: #587544).
   * Upload to unstable.
 
- -- Luigi Toscano <luigi.toscano@tiscali.it>  Thu, 31 Mar 2012 17:44:05 +0200
+ -- Luigi Toscano <luigi.toscano@tiscali.it>  Sat, 31 Mar 2012 17:44:05 +0200
 
 basket (1.81-1) experimental; urgency=low
 
