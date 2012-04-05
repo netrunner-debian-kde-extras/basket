@@ -1,4 +1,4 @@
-basket (1.81-3) UNRELEASED; urgency=low
+basket (1.81-3) unstable; urgency=low
 
   * Split arch-independent data into basket-data package.
     - add basket.install and basket-data.install; rename docs and menu to
@@ -7,11 +7,11 @@ basket (1.81-3) UNRELEASED; urgency=low
       and the variables used by that section; it was needed to remove one
       symbolic link which is not included in the *.install files anymore.
   * Add override no-symbols-control-file (libbasketcommon is private).
-  * Change order of parameters of dch command in rules file to be
+  * Change order of parameters of dh command in rules file to be
     compatible with debhelper>7.
   * Fix day of the week in previous changelog entry.
 
- -- Luigi Toscano <luigi.toscano@tiscali.it>  Wed, 04 Apr 2012 01:30:28 +0200
+ -- Luigi Toscano <luigi.toscano@tiscali.it>  Thu, 05 Apr 2012 01:50:31 +0200
 
 basket (1.81-2) unstable; urgency=high
 
