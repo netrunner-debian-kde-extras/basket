@@ -1,5 +1,5 @@
 version=3
 
 opts=filenamemangle=s/.*\?file=(.*)$/$1\.tar\.bz2/ \
-  http://basket.kde.org/ downloads/\?file=basket-(.+)
+  http://basket.kde.org/ downloads/\?file=basket-(.+) debian svn-upgrade
   
