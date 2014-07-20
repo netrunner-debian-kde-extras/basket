@@ -10,6 +10,7 @@ basket (2.10~beta-1) experimental; urgency=medium
   * Updated copyright, watch, *.install, basket.docs files.
   * Fix Vcs-Svn header in debian/control
   * Update standard version to 3.9.5. No changes required.
+  * Add required dependency to pkg-config.
   * Remove patch: 18_no_kde3_libs (obsolete).
   * Add patches to properly install XDG files (thanks Pino):
     - 19a-cmake-fix-installation-of-XDG-mimetypes-XML.patch
