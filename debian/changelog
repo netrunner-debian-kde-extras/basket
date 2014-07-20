@@ -1,10 +1,21 @@
-basket (1.81-3.1) UNRELEASED; urgency=low
+basket (2.10~beta-1) experimental; urgency=medium
 
+  [ Mark Purcell ]
   * debian/control add Vcs: headers
   * Add myself to Uploaders:
   * debian/compat -> 9
 
- -- Mark Purcell <msp@debian.org>  Sun, 21 Apr 2013 09:30:04 +1000
+  [ Luigi Toscano ]
+  * New upstream version: 2.10~beta.
+  * Updated copyright, watch, *.install, basket.docs files.
+  * Fix Vcs-Svn header in debian/control
+  * Update standard version to 3.9.5. No changes required.
+  * Remove patch: 18_no_kde3_libs (obsolete).
+  * Add patches to properly install XDG files (thanks Pino):
+    - 19a-cmake-fix-installation-of-XDG-mimetypes-XML.patch
+    - 19b-cmake-remove-installation-of-basket.desktop-using-xd.patch
+
+ -- Luigi Toscano <luigi.toscano@tiscali.it>  Sun, 20 Jul 2014 16:26:33 +0200
 
 basket (1.81-3) unstable; urgency=low
 

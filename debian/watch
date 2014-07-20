@@ -1,5 +1,4 @@
 version=3
 
-opts=filenamemangle=s/.*\?file=(.*)$/$1\.tar\.bz2/ \
-  http://basket.kde.org/ downloads/\?file=basket-(.+) debian svn-upgrade
-  
+opts="uversionmangle=s/-([^0-9])/~\\1/" \
+  https://launchpad.net/basket/kde4/ https://launchpad.net/basket/kde4/.+/\+download/basket-(.+).tar.bz2 

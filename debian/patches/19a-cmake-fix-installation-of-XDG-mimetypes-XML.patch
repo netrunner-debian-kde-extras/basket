@@ -1,0 +1,41 @@
+From 250054aafdca5dce706fa1075186b6b701104991 Mon Sep 17 00:00:00 2001
+From: Pino Toscano <toscano.pino@tiscali.it>
+Date: Sun, 20 Jul 2014 11:37:09 +0200
+Subject: [PATCH] cmake: fix installation of XDG mimetypes XML
+
+Look for SharedMimeInfo and use the proper cmake macros of it to
+install the XML for the XDG mimetypes to the correct place and in the
+correct way.
+---
+ file-integration/CMakeLists.txt | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+
+Forwarded: https://github.com/gl-bars/basket/pull/14
+diff --git a/file-integration/CMakeLists.txt b/file-integration/CMakeLists.txt
+index afad018..3f8013e 100644
+--- a/file-integration/CMakeLists.txt
++++ b/file-integration/CMakeLists.txt
+@@ -9,17 +9,15 @@ install(TARGETS basketthumbcreator DESTINATION ${PLUGIN_INSTALL_DIR})
+ 
+ ########### install files ###############
+ 
+-find_program(XDG-MIME_EXECUTABLE xdg-mime)
++find_package(SharedMimeInfo REQUIRED)
+ find_program(XDG-DESKTOP-MENU_EXECUTABLE xdg-desktop-menu)
+ 
+ install(FILES  basketthumbcreator.desktop DESTINATION ${SERVICES_INSTALL_DIR})
++install(FILES basket.xml DESTINATION ${XDG_MIME_INSTALL_DIR})
++update_xdg_mimetypes(${XDG_MIME_INSTALL_DIR})
+ install(CODE "
+-execute_process(COMMAND ${XDG-MIME_EXECUTABLE} install --novendor
+-  ${CMAKE_CURRENT_SOURCE_DIR}/basket.xml)
+ execute_process(COMMAND ${XDG-DESKTOP-MENU_EXECUTABLE} install
+   --novendor ${CMAKE_SOURCE_DIR}/src/basket.desktop)
+-execute_process(COMMAND ${XDG-MIME_EXECUTABLE} default
+-  ${CMAKE_SOURCE_DIR}/src/basket.desktop application/x-basket-item)
+ ")
+ 
+ kde4_install_icons(${ICON_INSTALL_DIR})
+-- 
+2.0.1
+
