@@ -8,7 +8,7 @@ basket (2.10~beta-1) experimental; urgency=medium
   [ Luigi Toscano ]
   * New upstream version: 2.10~beta.
   * Updated copyright, watch, *.install, basket.docs files.
-  * Fix Vcs-Svn header in debian/control
+  * Fix Vcs-Svn header in debian/control.
   * Update standard version to 3.9.5. No changes required.
   * Add required dependency to pkg-config.
   * Remove patch: 18_no_kde3_libs (obsolete).
