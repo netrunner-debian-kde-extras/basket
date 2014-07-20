@@ -15,6 +15,7 @@ basket (2.10~beta-1) experimental; urgency=medium
   * Add patches to properly install XDG files (thanks Pino):
     - 19a-cmake-fix-installation-of-XDG-mimetypes-XML.patch
     - 19b-cmake-remove-installation-of-basket.desktop-using-xd.patch
+  * Update lintian overrides.
 
  -- Luigi Toscano <luigi.toscano@tiscali.it>  Sun, 20 Jul 2014 16:26:33 +0200
 
