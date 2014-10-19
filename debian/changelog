@@ -1,4 +1,7 @@
-basket (2.10~beta-2) UNRELEASED; urgency=medium
+basket (2.10~beta+git6fed731-1) UNRELEASED; urgency=medium
+  * New git snapshot: drop patches included upstream:
+    - 19a-cmake-fix-installation-of-XDG-mimetypes-XML.patch
+    - 19b-cmake-remove-installation-of-basket.desktop-using-xd.patch
   * The debian repository is on git, Vcs-Svn has been replaced by Vcs-Git
     and Vcs-Browser has been updated.
   * Update standard version to 3.9.6. No changes required.

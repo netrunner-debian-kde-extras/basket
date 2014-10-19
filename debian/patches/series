@@ -1,3 +1,1 @@
 14_update_es_po.diff
-19a-cmake-fix-installation-of-XDG-mimetypes-XML.patch
-19b-cmake-remove-installation-of-basket.desktop-using-xd.patch
