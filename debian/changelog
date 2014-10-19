@@ -1,3 +1,10 @@
+basket (2.10~beta-2) UNRELEASED; urgency=medium
+  * The debian repository is on git, Vcs-Svn has been replaced by Vcs-Git
+    and Vcs-Browser has been updated.
+  * Update standard version to 3.9.6. No changes required.
+
+ -- Luigi Toscano <luigi.toscano@tiscali.it>  Thu, 16 Oct 2014 16:50:56 +0200
+
 basket (2.10~beta-1) experimental; urgency=medium
 
   [ Mark Purcell ]
