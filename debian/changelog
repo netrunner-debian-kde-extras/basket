@@ -12,6 +12,7 @@ basket (2.10~beta+git6fed731-1) unstable; urgency=medium
   * Add explicit build dependency to kdelibs5-dev, it seems it helps with
     using the dummy phonon backend during compilation.
   * Add compiler flags to enable as-needed linking.
+  * Remove README.source, mostly outdated.
   * Upload to unstable.
 
  -- Luigi Toscano <luigi.toscano@tiscali.it>  Sun, 19 Oct 2014 16:59:56 +0200
