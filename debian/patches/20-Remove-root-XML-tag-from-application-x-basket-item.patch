@@ -8,6 +8,7 @@ The tag needs a namespaceURI which does not make sense for its usage.
  file-integration/basket.xml | 1 -
  1 file changed, 1 deletion(-)
 
+Forwarded: https://github.com/basket-notepads/basket/pull/19
 diff --git a/file-integration/basket.xml b/file-integration/basket.xml
 index 5714972..aaa9309 100644
 --- a/file-integration/basket.xml
