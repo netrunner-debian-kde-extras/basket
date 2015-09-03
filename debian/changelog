@@ -4,11 +4,11 @@ basket (2.10~beta+gitfaa6dce-1) UNRELEASED; urgency=medium
   * Add explicit dependency on shared-mime-info, which was most likely
     implicitly dragged in by some other dependency in the past, and
     also on libsoprano-dev, which was installed by kdelibs5-dev
-    (Closes: #796415).
+    (Closes: #796415, #773779).
   * Drop patch 20-Remove-root-XML-tag-from-application-x-basket-item.patch,
     included upstream.
 
- -- Luigi Toscano <luigi.toscano@tiscali.it>  Fri, 04 Sep 2015 01:39:12 +0200
+ -- Luigi Toscano <luigi.toscano@tiscali.it>  Fri, 04 Sep 2015 01:48:34 +0200
 
 basket (2.10~beta+git6fed731-1) unstable; urgency=medium
 
