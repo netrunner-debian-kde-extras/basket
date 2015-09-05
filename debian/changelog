@@ -7,6 +7,7 @@ basket (2.10~beta+gitfaa6dce-1) UNRELEASED; urgency=medium
     (Closes: #796415, #773779).
   * Drop patch 20-Remove-root-XML-tag-from-application-x-basket-item.patch,
     included upstream.
+  * Remove TODO from documentation (not user oriented).
 
  -- Luigi Toscano <luigi.toscano@tiscali.it>  Fri, 04 Sep 2015 01:48:34 +0200
 
