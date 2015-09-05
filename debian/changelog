@@ -1,6 +1,7 @@
-basket (2.10~beta+gitfaa6dce-1) UNRELEASED; urgency=medium
+basket (2.10~beta+git20150905.faa6dce-1) UNRELEASED; urgency=medium
 
   * New git snapshot.
+  * Switch to a proper versioning schema (<date>.<gitsnapshot>).
   * Add explicit dependency on shared-mime-info, which was most likely
     implicitly dragged in by some other dependency in the past, and
     also on libsoprano-dev, which was installed by kdelibs5-dev
