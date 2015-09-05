@@ -1,4 +1,4 @@
-basket (2.10~beta+git20150905.faa6dce-1) UNRELEASED; urgency=medium
+basket (2.10~beta+git20150905.faa6dce-1) unstable; urgency=medium
 
   * New git snapshot.
   * Switch to a proper versioning schema (<date>.<gitsnapshot>).
@@ -10,7 +10,7 @@ basket (2.10~beta+git20150905.faa6dce-1) UNRELEASED; urgency=medium
     included upstream.
   * Remove TODO from documentation (not user oriented).
 
- -- Luigi Toscano <luigi.toscano@tiscali.it>  Fri, 04 Sep 2015 01:48:34 +0200
+ -- Luigi Toscano <luigi.toscano@tiscali.it>  Sun, 06 Sep 2015 00:07:53 +0200
 
 basket (2.10~beta+git6fed731-1) unstable; urgency=medium
 
